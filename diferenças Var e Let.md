@@ -1,0 +1,2 @@
+### Var tem o escopo global,pode ser redeclarada e pode ser inicializada apenas sem o uso de 'var' na frente do nome da variavel
+## Let veio junto com as atualizações do EcmaScript para corrigir esses ploblemas com o var
