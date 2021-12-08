@@ -1,6 +1,10 @@
-let contador = 0
+let contador = 1
 
 while(contador <= 10){
-    console.log(`1 x ${contador} = ${(1*contador)}`)
-    contador += 1
+    let y = 1
+    while(y <=10){
+        console.log(`${contador} x ${y} = ${(y*contador)}`)
+        y++
+    }
+    contador++
 }
