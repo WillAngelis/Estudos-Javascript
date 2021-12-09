@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Estudando o DOM</title>
 </head>
 <body>
     <textarea name="" id="texto" cols="30" rows="10" placeholder="escreva aqui"></textarea>
@@ -12,27 +12,5 @@
     <button class="apagar">Apagar</button>
     <button class="h1">H1</button>
 </body>
-<script>
-    const texto = document.querySelector('#texto')
-    const verm = document.querySelector('.verm')
-    const apagar = document.querySelector('.apagar')
-    const h1 = document.querySelector('.h1')
-    verm.addEventListener('click',function(e){
-        e.preventDefault()
-        let textoDentro = texto.value
-        console.log(textoDentro)
-        texto.style.color = '#ff0000'
-    })
-    apagar.addEventListener('click',function(e){
-        e.preventDefault()
-        texto.value = ''
-    })
-    h1.addEventListener('click',function(e){
-        e.preventDefault()
-        texto.style.fontSize = "40px";
-    })
-    const textoUpper = texto.value
-    
-
-</script>
+<script src="38- Estudando o DOM.js"></script>
 </html>
