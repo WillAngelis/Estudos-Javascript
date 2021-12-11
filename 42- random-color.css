@@ -1,26 +1,32 @@
-.container{
-    width: 400px;
-    height: 400px;
+.container,.main__container{
+    width: 25rem;
+    height: 25rem;
     background-color: slateblue;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.main__container{
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: none;
+}
 
 .texto{
     color: #fff;
-    font-size: 25px;
+    font-size: 4.5rem;
     font-weight: bold;
 }
 .cor,.txt{
-    width: 100px;
-    height: 30px;
+    width: 6.25rem;
+    height: 1.85rem;
     color: rgb(255, 255, 255);
     background: rgb(39, 67, 226);
     font-weight: bold;
     border: none;
     cursor: pointer;
-    margin: 20px;
+    margin: 1.25rem;
 }
 .txt{
     background: rgb(226, 39, 70);
