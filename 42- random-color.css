@@ -12,3 +12,16 @@
     font-size: 25px;
     font-weight: bold;
 }
+.cor,.txt{
+    width: 100px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    background: rgb(39, 67, 226);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+}
+.txt{
+    background: rgb(226, 39, 70);
+}
