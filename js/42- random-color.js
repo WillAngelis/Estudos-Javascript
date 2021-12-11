@@ -28,6 +28,7 @@ function MudarTxt(corRandom){
 function MudarCor(){
     let corRandom = colors[Math.floor(Math.random() * colors.length)]
     div.style.background = corRandom;
+    console.log(corRandom)
     return corRandom
 }
 push.addEventListener('click',(corRandom)=>{
