@@ -1,6 +1,7 @@
 .container,.main__container{
     width: 25rem;
-    height: 25rem;
+    height: 40rem;
+    border-radius: 10px;
     background-color: slateblue;
     display: flex;
     justify-content: center;
@@ -15,10 +16,10 @@
 
 .texto{
     color: #fff;
-    font-size: 4.5rem;
+    font-size: 12.5rem;
     font-weight: bold;
 }
-.cor,.txt{
+.btn{
     width: 6.25rem;
     height: 1.85rem;
     color: rgb(255, 255, 255);
@@ -30,4 +31,7 @@
 }
 .txt{
     background: rgb(226, 39, 70);
+}
+.pushBtn{
+    background: rgb(89, 39, 226);
 }
