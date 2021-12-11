@@ -2,24 +2,41 @@ const div = document.querySelector('.container')
 const p = document.querySelector('.texto')
 const txt = document.querySelector('.txt')
 const cor = document.querySelector('.cor')
+const push = document.querySelector('.pushBtn')
 
-let colors = ['red','blue','black','white','green','pink']
-let texto = ['1','2','3','4','5','6','7','8','+4']
+let colors = ['red','blue','green','yellow']
+let texto = ['1','2','3','4','5','6','7','8','9','+2','+4']
 
-txt.addEventListener('click', function(){
-    let textoRandom = texto[Math.floor(Math.random() * texto.length)] 
-    p.textContent = textoRandom
-    console.log(textoRandom)
-
+txt.addEventListener('click',()=>{
+    MudarTxt()
+})
+cor.addEventListener('click',()=>{
+    MudarCor()
 })
 
-cor.addEventListener('click',()=>{ 
-    let corRandom = colors[Math.floor(Math.random() * colors.length)] 
-    div.style.background = corRandom
-    if (corRandom != 'white'){
-        p.style.color = 'white'
+function MudarTxt(corRandom){
+    let textoRandom = texto[Math.floor(Math.random() * texto.length)] 
+    p.textContent = textoRandom
+    if (textoRandom == '+4'){
+        div.style.background = 'black'
     }else{
-        p.style.color = 'black'
+        div.style.background = corRandom
     }
-    console.log(corRandom)
+    console.log(textoRandom)
+}
+
+function MudarCor(){
+    let corRandom = colors[Math.floor(Math.random() * colors.length)]
+    div.style.background = corRandom;
+    return corRandom
+}
+push.addEventListener('click',(corRandom)=>{
+    MudarCor()
+    if (div.style.background == 'yellow'){
+        p.style.color = 'black'
+        console.log('foi')
+    }else{
+        p.style.color = 'white'
+    }
+    MudarTxt()
 })
