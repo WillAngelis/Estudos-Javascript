@@ -1,1 +1,14 @@
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: slateblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.texto{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
